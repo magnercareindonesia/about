@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+    <head>
+      <meta charset='UTF-8' />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>
+        <data:view.title.escaped/>
+      </title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"></link>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"></link>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+      <style>
+        * {
+  box-sizing: border-box;
+}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+#myVideo {
+  right: 0;
+  bottom: 100px;
+  width: 100%; 
+  height: 100%;
+}
+
+
+
+li,tr:hover{cursor: pointer;}
+
+a:hover{color: white!important;}
+
+:root {
+        --background: #111;
+        --color: #f6f6f6;
+      }
+
+      body {
+        background-color: var(--background);
+        color: var(--color);
+      }
+
+   /* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+
+  background: black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orange; 
+}   
+
+
+      .video-wrap {
+
+        width: 100%;
+	/* Keep it the right aspect-ratio */
+	aspect-ratio: 16/9;
+
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+    .video-wrap iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 1080px;
+    } 
+   </style>
+    </head>
+    <body>
+
+
+      <div id='wrapper'>
+
+        <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding w3-sans-serif w3-large" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br></br>
+<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="w3_close()" title="Toggle Navigation Menu"><i class="bi bi-list"></i></a>
+  <div class="w3-container">
+    <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/logo/logo.svg"></img>
+  </div>
+  <div class="w3-bar-block w3-padding-32">
+  <nav aria-label='Table of contents'>
+  <ul class='w3-ul'>
+   <li class='w3-border-0'> <a class='w3-bar-item w3-button w3-hover-orange w3-round w3-padding-8' href='#' onclick='w3_close()'><i class='bi bi-house w3-xlarge w3-margin-right'/> Home</a> </li>
+   <li class='w3-border-0'>  <a class='w3-bar-item w3-button w3-hover-orange w3-round w3-padding-8' href='#keuntungan' onclick='w3_close()'><i class='bi bi-arrow-right-square-fill w3-xlarge w3-margin-right'/> Keuntungan</a>  </li>
+   <li class='w3-border-0'>  <a class='w3-bar-item w3-button w3-hover-orange w3-round w3-padding-8' href='#legalitas' onclick='w3_close()'><i class='bi bi-arrow-right-square-fill w3-xlarge w3-margin-right'/> Fasilitas</a>  </li>
+   <li class='w3-border-0'>  <a class='w3-bar-item w3-button w3-hover-orange w3-round w3-padding-8' href='#fitur' onclick='w3_close()'><i class='bi bi-arrow-right-square-fill w3-xlarge w3-margin-right'/> Fitur</a>  </li>
+   <li class='w3-border-0'>  <a class='w3-bar-item w3-button w3-hover-orange w3-round w3-padding-8' href='#peluangusaha' onclick='w3_close()'><i class='bi bi-arrow-right-square-fill w3-xlarge w3-margin-right'/> Peluang Usaha</a> </li>
+  <li class='w3-border-0'>   <a class='w3-bar-item w3-button w3-hover-orange w3-round w3-padding-8' href='#produk' onclick='w3_close()'><i class='bi bi-arrow-right-square-fill w3-xlarge w3-margin-right'/> Produk</a> </li>
+   <li class='w3-border-0'>  <a class='w3-bar-item w3-button w3-hover-orange w3-round w3-padding-8' href='#marketingplan' onclick='w3_close()'><i class='bi bi-arrow-right-square-fill w3-xlarge w3-margin-right'/> Marketing Plan</a> </li>
+   <li class='w3-border-0'>  <a class='w3-button w3-block w3-round w3-hover-deep-orange w3-orange w3-text-white w3-padding-16 w3-margin-top' onclick='window.location.href=&apos;https://magnercare.com/register/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C&apos;;'><i class='bi bi-hand-index-thumb-fill'/> DAFTAR SEKARANG</a> </li>
+  </ul>
+    </nav>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">☰</a>
+  <span> <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/logo/logo.svg" width="200" height="50px"></img></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-xlarge" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"><i class="bi bi-list"></i></div>
+
+<video autoplay="yes" muted="yes" loop="yes" id="myVideo">
+  <source src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:magner-prod/videos/magner.mp4" type="video/mp4"></source>
+</video>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ <!-- Header -->
+ <div class="w3-container w3-sans-serif w3-large" style="margin-top:80px" id="showcase">
+  <h1 class="w3-xxlarge w3-text-grey"><b>Peluang Usaha Terbaru 2023</b></h1>
+    <h1 class="w3-xxxlarge"><b>MAGNER CARE INDONESIA</b></h1>
+  
+    <h1 class="w3-xxlarge w3-text-orange"><b>9 Keuntungan Menjalankan Bisnis Magner Care</b></h1>
+    <hr style="width:25%;border:5px solid orange" class="w3-round"></hr>
+    <ul class="w3-ul w3-large w3-border-0 w3-hoverable">
+  <li class="w3-hover-orange"><i class="bi bi-1-circle-fill w3-xlarge w3-margin-right"></i> Memiliki Legalitas Usaha Lengkap</li>
+  <li class="w3-hover-orange"><i class="bi bi-2-circle-fill w3-xlarge w3-margin-right"></i> Marketing Plan Mudah Dijalankan</li>
+  <li class="w3-hover-orange"><i class="bi bi-3-circle-fill w3-xlarge w3-margin-right"></i> Produk Dibutuhkan Tiap Kalangan</li>
+  <li class="w3-hover-orange"><i class="bi bi-4-circle-fill w3-xlarge w3-margin-right"></i> Produk Habis Pakai (Repeat Order)</li>
+  <li class="w3-hover-orange"><i class="bi bi-5-circle-fill w3-xlarge w3-margin-right"></i> Modal Kecil</li>
+  <li class="w3-hover-orange"><i class="bi bi-6-circle-fill w3-xlarge w3-margin-right"></i> Tidak Perlu Stok Barang</li>
+  <li class="w3-hover-orange"><i class="bi bi-7-circle-fill w3-xlarge w3-margin-right"></i> Bisa Dijalankan Kapan Saja, Dimana Saja</li>
+  <li class="w3-hover-orange"><i class="bi bi-8-circle-fill w3-xlarge w3-margin-right"></i> Tanpa Syarat Belanja Bulanan</li>
+  <li class="w3-hover-orange"><i class="bi bi-9-circle-fill w3-xlarge w3-margin-right"></i> Bisa Diwariskan</li>
+</ul>
+  </div>
+
+
+ <!-- Legalitas -->
+ <div class="w3-container w3-sans-serif w3-large" style="margin-top:80px" id="legalitas">
+    <h1 class="w3-jumbo"><b>MENGAPA MAGNER CARE?</b></h1>
+    <h1 class="w3-xxlarge w3-text-orange"><b>Magner Care Memiliki Legalitas Usaha Lengkap.</b></h1>
+    <hr style="width:100px;border:5px solid orange" class="w3-round"></hr>
+    <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/legalitas-usaha-magnercare.webp" alt="Legalitas Usaha Magner Care" class="w3-image w3-round"></img>
+    <p class="w3-padding-32 w3-large">Anggota dari Asosiasi Penjualan Langsung Indonesia (APLI)
+No. Anggota : 0250/08/23</p>
+  </div>
+
+
+  <!-- Fasilitas -->
+  <div class="w3-container w3-sans-serif w3-large" id="fasilitas" >
+    <h1 class="w3-xxxlarge w3-text-orange"><b>Fasilitas Magner Care.</b></h1>
+    <hr style="width:100px;border:5px solid orange" class="w3-round"></hr>
+    <p class="w3-padding-16">Magner Care memiliki fasilitas yang lengkap dan terintegrasi penuh sehingga memudahkan Anda untuk menjalankan bisnis Magner Care tanpa harus direpotkan dan dipusingkan dengan urusan stok barang, expedisi dan sistem.
+    </p>
+    <div class="w3-cell-row">
+  <div class="w3-container w3-cell">
+  <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/support-magnercare.webp" class="w3-image"></img>
+  </div>
+  <div class="w3-container w3-cell">
+  <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/magner.webp" class="w3-image"></img>
+  </div>
+  <div class="w3-container w3-cell">
+  <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/supply-magnercare.webp" class="w3-image"></img>
+  </div>
+</div></div>
+
+
+ <!-- Fitur -->
+ <div class="w3-container w3-sans-serif w3-large" id="fitur">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>Fitur Magner Care.</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round"></hr>
+    <p class="w3-padding-16 w3-large">Magner Care memiliki fitur yang lengkap dan canggih untuk menunjang Anda menjalankan bisnis Magner Care, mulai dari dashboard untuk Cek Bonus Pribadi, Cek Perkembangan Bisnis, Informasi Produk, Pusat Bantuan hingga Event dan Promosi.
+    </p>
+    <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/fitur.webp" alt="Fitur Magner Care" class="w3-image"></img>
+</div>
+
+
+ <!-- Peluang -->
+ <div class="w3-container w3-sans-serif w3-large" id="peluangusaha" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>Peluang Usaha.</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round"></hr>
+    <p class="w3-large">Kepolisian Republik Indonesia (POLRI) mencatat, jumlah kendaraan bermotor di Indonesia mencapai 152,51 juta unit hingga 31 Desember 2022. 
+Dari jumlah tersebut, <span class="w3-text-orange w3-xlarge">sebanyak 126,99 juta unit atau 83,27% di antaranya berupa sepeda motor</span>.
+    </p>
+    <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/Konsumsi BBM di Indonesia.webp" alt="Konsumsi BBM di Indonesia" class="w3-image w3-round"></img>
+ <p class="w3-padding-32 w3-large">Berdasarkan data Kementerian Energi dan Sumber Daya Mineral Republik Indonesia (ESDM RI), tercatat sepanjang tahun 2022 konsumsi bahan bakar minyak (BBM) RON 90 di Indonesia mencapai <span class="w3-text-orange w3-xlarge">29,68 juta kiloliter</span>.
+    </p>
+    <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/Jumlah Kendaraan Bermotor di Indonesia.webp" alt="Jumlah Kendaraan Bermotor di Indonesia" class="w3-image w3-round"></img>
+</div>
+
+
+<!-- Produk -->
+<div class="w3-container w3-sans-serif w3-large" id="produk" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>Produk Magner Care.</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round"></hr>
+    <p class="w3-large">Magner Care menyediakan produk-produk perawatan otomotif berkualitas tinggi yang diproduksi dengan Nano Teknologi dengan standard kualitas ISO 9001, diantaranya adalah Petrol Plus Treatment (Tersedia untuk mesin motor, mobil dan diesel), Premium Shampoo, Tire Polish, Black Restore Trim, Bug and Tar Remover, Chain Wax, Coolant Booster, Diesel Purge Additive Oil, Engine Degreaser, Belt Dressing, Wiper fluid, shine Sbooster, Scratch Wax, Rubberized Undercoating, Rat Repellent, Radiator Flush, Interior Cleaner, Fogging Refresher, Fog Protection, Multi Purpose Penetrating Oil dan masih banyak lagi yang bisa Anda dapatkan di <a href="https://magnercare.com/register/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C" class="w3-text-orange">MAGNERCARE.COM</a></p>
+ 
+
+      <div class='w3-padding-32 w3-margin-bottom'>
+<div class='w3-half'>
+      <ul class='w3-ul'>
+      <li class='w3-padding-8 w3-hover-orange w3-border-top'><a href='https://magnercare.com/product/petrol-plus-treatment-for-motorcylce-bensin/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>PETROL + BENSIN (Motor)</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/petrol-plus-treatment-bensin/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>PETROL + BENSIN (Mobil)</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/petrol-plus-treatment-solar/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>PETROL + SOLAR (Diesel)</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/wiper-fluid/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Wiper Fluid</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/tire-polish/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Tire polish</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/shine-booster/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Shine Booster</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/premium-shampoo/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Premium Shampoo</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/scratch-wax/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Scratch Wax</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/rubberized-undercoating/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Rubberized Undercoating</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/rat-repellent/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Rat Repellent</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/radiator-flush/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Radiator Flush</a></li> 
+      </ul>
+    </div>
+        
+    <div class='w3-half'>
+    <ul class='w3-ul'>
+    <li class='w3-padding-8 w3-border-top w3-hover-orange'><a href='https://magnercare.com/product/multipurpose-penetrating-oil/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right '/>Multipurpose Penetrating Oil</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/interior-cleaner/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Interior Cleaner</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/fogging-refresher/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Fogging Refresher</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/fog-protection/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Fog Protection</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/engine-degreaser/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Engine Degreaser</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/diesel-purge-additive-oil/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Diesel Purge Additive Oil</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/coolant-booster/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Coolant Booster</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/chain-wax/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Chain Wax</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/bug-and-tar-remover/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Bug And Tar Remover</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/black-restore-trim/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Black Restore Trim</a></li>
+        <li class='w3-padding-8 w3-hover-orange'><a href='https://magnercare.com/product/belt-dressing/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C' rel='dofollow' target='_blank'><i class='bi bi-check-circle-fill w3-xlarge w3-margin-right'/>Belt Dressing</a></li>
+      </ul>
+    </div>
+</div>
+</div>
+
+
+
+<!-- Produk -->
+<div class="w3-container" id="fitur" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>PETROL +</b></h1>
+    <hr style="width:25%;border:5px solid orange" class="w3-round"></hr>
+    <p class="w3-large w3-sans-serif">Petrol+ meningkatkan nilai oktan (untuk bensin) dan cetane (untuk diesel), menghemat kebutuhan akan bahan bakar yang setara dengan bahan bakar premium seperti Vpower atau Pertamax Turbo. Cukup dengan Petrol+ Anda bisa mendapatkan performa yang sama dan lebih irit.
+    </p>
+<img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/Petrol Plus Penghemat BBM Magner Care.webp" alt="Petrol Plus Penghemat BBM Magner Care" class="w3-image w3-round w3-padding-32"></img>
+ <h1 class="w3-xxlarge w3-text-orange" style="margin-top:75px"><b>8 Manfaat Penggunaan Petrol Plus</b></h1>
+    <hr style="width:25%;border:5px solid orange" class="w3-round"></hr>
+    <ul class="w3-ul w3-large w3-border-0 w3-hoverable">
+        <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-1-circle-fill w3-xlarge w3-margin-right"></i>Menghemat BBM 30 s/d 50 %</li>
+    <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-2-circle-fill w3-xlarge w3-margin-right"></i>Meningkatkan kualitas BBM  (RON)</li>
+    <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-3-circle-fill w3-xlarge w3-margin-right"></i>Menyempurnakan Pembakaran</li>
+    <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-4-circle-fill w3-xlarge w3-margin-right"></i>Membersihkan kerak dalam mesin.</li>
+    <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-5-circle-fill w3-xlarge w3-margin-right"></i>Memperpanjang usia oli hingga 3x lipat</li>
+    <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-6-circle-fill w3-xlarge w3-margin-right"></i>Menambah Tenaga dan Akselerasi</li>
+    <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-7-circle-fill w3-xlarge w3-margin-right"></i>Menghilangkan Knocking (ngelitik)</li>
+    <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-8-circle-fill w3-xlarge w3-margin-right"></i>Mengurangi emisi gas buang kendaraan</li>
+    </ul>
+
+<h1 class="w3-xxlarge w3-text-orange" style="margin-top:75px"><b>ILUSTRASI PENGHEMATAN</b></h1>
+<h2 class="w3-xlarge w3-text-white"><b>PETROL + BENSIN (Mobil)</b></h2>
+    <hr style="width:25%;border:5px solid orange" class="w3-round"></hr>
+    <p>Kendaraan Bensin Innova Reborn 2022 - Kapasitas Tanki 55 L.
+Jika pemakaian BBM adalah 55 liter/ 5 hari (Full Tank)</p>
+
+<div class="w3-responsive">
+<table class="w3-table-all w3-text-black">
+    <tr class="w3-deep-orange w3-text-white">
+      <th>Kendaraan</th>
+      <th>Pertalite</th>
+      <th>Shell V-Power</th>
+      <th>Penghematan Petrol +</th>
+    </tr>
+    <tr class="w3-hover-sand">
+      <td>Innova Reborn</td>
+      <td>10.000/L</td>
+      <td>16350/L</td>
+      <td class="w3-green w3-text-white">6.350/L</td>
+    </tr>
+    <tr class="w3-hover-sand">
+      <td>Pengisian 6x Sebulan</td>
+      <td>10.000 x 55 x 6 = <span class="w3-text-red" style="font-weight: bold;">3.300.000</span></td>
+      <td>16.350 x 55 x 6 = <span class="w3-text-red" style="font-weight: bold;">5.395.500</span></td>
+      <td class="w3-green w3-text-white">6.350 x 55 x 6 = <span class="w3-text-white" style="font-weight: bold;">2.095.500</span></td>
+    </tr>
+    <tr class="w3-hover-sand">
+      <td>Pemakaian 12 Bulan</td>
+      <td>3.300.000 x 12 = <span class="w3-text-red" style="font-weight: bold;">39.600.000</span></td>
+      <td>5.395.500 x 12 = <span class="w3-text-red" style="font-weight: bold;">64.746.000</span></td>
+      <td class="w3-green w3-text-white">2.095.500 x 12 = <span class="w3-text-white" style="font-weight: bold;">25.146.000</span></td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+
+
+<!-- Marketing Plan -->
+<div class="w3-container" id="marketingplan" style="margin-top:75px">
+<h1 class="w3-jumbo"><b>MARKETING PLAN MAGNER CARE</b></h1>
+<h1 class="w3-xxxlarge w3-text-orange"><b>SEMUDAH 1.2.3</b></h1>
+<hr style="width:50px;border:5px solid orange" class="w3-round"></hr>
+<p class="w3-large">Marketing Plan Magner Care sangat mudah dipahami dan dijalankan, semua orang berhak mencapai posisi puncak dan bukan orang tertentu saja.</p>
+<img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/marketingplan.webp" alt="Marketing Plan Magner Care" class="w3-image w3-round"></img>
+<p class="w3-padding-16"><img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/marketing-plan-magnercare-1-dark.webp" class="w3-image w3-round"></img></p>
+<p class="w3-padding-16"><img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/bonus-dark.webp" class="w3-image w3-round"></img></p>
+<h1 class="w3-padding-32 w3-xxxlarge w3-text-orange"><b>Ilustrasi Perhitungan Bonus</b></h1>
+<hr style="width:50px;border:5px solid orange" class="w3-round"></hr>
+<p class="w3-xlarge">Asumsi:</p>
+<ul class="w3-ul w3-large w3-border-0 w3-hoverable">
+  <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-check-lg w3-xlarge w3-margin-right"></i>Nominal per transaksi Rp. 100.000</li>
+  <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-check-lg w3-xlarge w3-margin-right"></i>Memiliki 10 downline aktif</li>
+  <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-check-lg w3-xlarge w3-margin-right"></i>Tiap downline punya 5 downline hingga 5 level</li>
+  <li class="w3-padding-8 w3-hover-orange"><i class="bi bi-check-lg w3-xlarge w3-margin-right"></i>Transaksi setiap downline adalah 5 transaksi / hari</li>
+</ul>
+<p class="w3-padding-16"><img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/ilustrasibonus-dark.webp" class="w3-image w3-round"></img></p>
+</div>
+
+
+<div class="w3-container" style="margin-top:75px">
+<div class="w3-center">
+<img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/apakah-anda-siap-menjadi-milliarder-magneracare.png" class="w3-image w3-round"></img>
+<button onclick="window.location.href='https://magnercare.com/register/?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C';"  class="w3-button w3-block w3-hover-deep-orange w3-orange w3-text-white w3-round-large w3-xxlarge w3-margin-bottom w3-padding-32">
+  <b><i class="bi bi-hand-index-thumb-fill"></i> DAFTAR MAGNER CARE</b></button>
+</div>
+</div>
+
+
+<!-- Video Tutorial -->
+<div class="w3-container w3-padding-48" id="videotutorial" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-white"><b>Video Tutorial Magner Care</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round"></hr>
+<div class="w3-cell-row">
+  <div class="w3-container w3-cell w3-mobile w3-padding">
+  <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/cara daftar.webp" onclick="document.getElementById('id01').style.display='block'" class="w3-hover-opacity w3-image w3-round-large w3-border w3-border-white"></img>
+  </div>
+  <div class="w3-container w3-cell w3-mobile w3-padding">
+  <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/cara belanja.webp" onclick="document.getElementById('id02').style.display='block'" class="w3-hover-opacity w3-image w3-round-large w3-border w3-border-white"></img>
+  </div>
+  <div class="w3-container w3-cell w3-mobile w3-padding">
+  <img src="https://sin1.contabostorage.com/10162138889b4438bab811ecee1a60ce:general/images/bbizsite/cara daftar membership.webp" onclick="document.getElementById('id03').style.display='block'" class="w3-hover-opacity w3-image w3-round-large w3-border w3-border-white"></img>
+  </div>
+</div>
+  </div>
+
+
+<!-- quote -->
+
+  <div class="w3-cell-row">
+  <div class="w3-container w3-cell w3-mobile w3-padding">
+  <div class="w3-panel w3-card-4 w3-white w3-round w3-padding">
+    <p class="w3-large w3-serif">
+    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i>
+    <p class="w3-xlarge w3-serif"><i>Orang pesimistis melihat kesulitan dalam setiap kesempatan. Orang optimistis melihat peluang dalam setiap kesulitan.</i></p>
+    <p>Winston Churchill</p>
+    </p>
+  </div>
+  </div>
+
+  <div class="w3-container w3-cell w3-mobile w3-padding">
+  <div class="w3-panel w3-card-4 w3-white w3-round w3-padding">
+    <p class=" w3-large w3-serif">
+    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i>
+    <p class="w3-xlarge w3-serif"><i>Pastikan Anda menolong banyak orang. Ketika orang lain sukses, ketika orang lain bahagia. Anda akan sukses dan bahagia</i></p>
+    <p>Jack Ma</p>
+    </p>
+  </div> 
+  </div>
+</div>
+
+
+<!-- follow us -->
+<div class="w3-container w3-cell w3-mobile w3-padding">
+<div class="w3-cell-row">
+  <div class="w3-container w3-cell w3-mobile w3-padding w3-text-orange">
+  <a href="https://facebook.com/magnercare?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C" target="_blank"><i class="bi bi-facebook"></i> magnercare</a>
+  </div>
+  <div class="w3-container w3-cell w3-mobile w3-padding w3-text-orange">
+  <a href="https://twitter.com/magnercare?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C" target="_blank"><i class="bi bi-twitter-x"></i> magnercare</a>
+  </div>
+  <div class="w3-container w3-cell w3-mobile w3-padding w3-text-orange">
+  <a href="https://instagram.com/magnercare?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C" target="_blank"><i class="bi bi-instagram"></i> magnercare</a>
+  </div>
+  <div class="w3-container w3-cell w3-mobile w3-padding w3-text-orange">
+  <a href="https://tiktok.com/@magnercare?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C" target="_blank"><i class="bi bi-tiktok"></i> @magnercare</a>
+  </div>
+  <div class="w3-container w3-cell w3-mobile w3-padding w3-text-orange">
+  <a href="https://youtube.com.com/@magnercare?utm_source=blogger&amp;utm_medium=blog&amp;utm_campaign=C" target="_blank"><i class="bi bi-youtube"></i> @magnercare</a>
+  </div>
+</div>
+</div>
+
+
+
+<div id="id01" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom w3-padding w3-round-large w3-black w3-border w3-border-white">
+  <span onclick="document.getElementById('id02').style.display='none'" class="w3-margin w3-round-large w3-hover-deep-orange w3-orange w3-text-white w3-button w3-xxlarge w3-display-topright" style="z-index:9999;"><i class="bi bi-x-square"></i></span>
+  
+  <div class="video-wrap">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hs9DXzdmxyQ?si=5CnMXYR73EaEypN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="yes"></iframe></div>
+    </div>
+   
+  </div>
+</div>
+
+    
+<div id="id02" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom w3-padding w3-round-large w3-black w3-border w3-border-white">
+  <span onclick="document.getElementById('id02').style.display='none'" class="w3-margin w3-round-large w3-hover-deep-orange w3-orange w3-text-white w3-button w3-xxlarge w3-display-topright" style="z-index:9999;"><i class="bi bi-x-square"></i></span>
+  
+  <div class="video-wrap">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KdmshqoRYhE?si=nu0wXT9o6Jx2pnyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="yes"></iframe></div>
+    </div>
+   
+  </div>
+</div>
+
+<div id="id03" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom w3-padding w3-round-large w3-black w3-border w3-border-white">
+  <span onclick="document.getElementById('id02').style.display='none'" class="w3-margin w3-round-large w3-hover-deep-orange w3-orange w3-text-white w3-button w3-xxlarge w3-display-topright" style="z-index:9999;"><i class="bi bi-x-square"></i></span>
+  
+  <div class="video-wrap">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Zx8rVWgisxA?si=FG4i-6MvR6VDnctd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="yes"></iframe></div>
+    </div>
+   
+  </div></div>
+
+  </div>
+
+  
+</div>
+</div>
+
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+    </body>
+</html>
